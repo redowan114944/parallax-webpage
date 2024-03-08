@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+
+
+.parallax{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sec{
+    background:#003329;
+    padding: 100px;
+    position: 100px;
+    position: relative;
+    top: 50px;
+}
+.sec h2{
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+}
+.sec p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+}
+
+/* animation section */
+#text{
+    font-size: 5em;
+    color: white;
+    position: absolute;
+    text-shadow: rgb(0, 0, 0.24) 0px 3px 8px;
+    animation: text linear;
+    animation-timeline: view();
+    transform: translateY(-300px);
+}
+@keyframes text{
+    50%{color: white;}
+    100%{
+        color: #359381;
+        transform: translateY(400px);
+    }
+}
+
+#hill1{
+    animation: hill1 linear;
+    animation-timeline: view();
+    transform: translateY(-200px);
+}
+@keyframes hill1{
+    100%{
+        
+        transform: translateY(350px);
+    }
+}
+
+#hill2{
+    animation: hill2 linear;
+    animation-timeline: view();
+    transform: translate(200px);
+}
+@keyframes hill2{
+    100%{
+        
+        transform: translateX(200px);
+    }
+}
+
+#hill3{
+    animation: hill3 linear;
+    animation-timeline: view();
+    transform: translateX(-200px);
+}
+@keyframes hill3{
+    100%{
+        
+        transform: translateX(200px);
+    }
+}
+
+#leaf{
+    animation: leaf linear;
+    animation-timeline: view();
+    transform: translate(-220px, 340px);
+}
+@keyframes leaf{
+    100%{
+        
+        transform: translate(300px, -400px);
+    }
+}
+
+#tree{
+    animation: tree linear;
+    animation-timeline: view();
+    transform: translateY(-500px);
+}
+@keyframes tree{
+    100%{
+        
+        transform: translateY(500px);
+    }
+}
+
+#hill4, #hill5{
+    animation: plant linear;
+    animation-timeline: view();
+    transform: translateY(-400px);
+}
+@keyframes plant{
+    100%{
+        
+        transform: translateY(300px);
+    }
+}
